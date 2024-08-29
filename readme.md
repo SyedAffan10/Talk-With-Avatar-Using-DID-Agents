@@ -4,7 +4,7 @@ This project demonstrates the use of D-ID's `talks` API for creating AI-driven v
 
 Here’s how the demo looks:
 
-![Sample Video](Sample-Video.gif)
+<img src="Sample-Video.gif" alt="Sample Video" width="800"/>
 
 ## Installation
 
