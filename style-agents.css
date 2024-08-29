@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+.animated {
+  animation: opacityAnimation 0.2s ease-in-out;
+}
+
+@keyframes opacityAnimation {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* New Css Code Start  */
+.chatgpt-container {
+  display: flex;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2d2d2d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #e0e0e0;
+}
+.new-chat-button {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.profile {
+  margin-top: auto;
+}
+
+.tab {
+  display: block;
+  color: #c0c0c0;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.tab.upgrade {
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.chatbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+.title h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.syncs {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .animated {
+  max-width: 100%;
+  max-height: 100%;
+} */
+
+.typer {
+  margin-top: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2d2d2d;
+  height: 50px;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #c0c0c0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.upload-button {
+  border-radius: 0;
+}
+.send-button {
+  background-color: #007bff;
+  color: white;
+  margin-right: 14px;
+}
+
+/* New Css COde End */

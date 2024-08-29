@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D-ID Agents API Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style-agents.css" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://studio.d-id.com/favicon/favicon-192x192.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <div class="chatgpt-container">
+      <div class="chatbox">
+        <div class="title">
+          <h1>IRA</h1>
+        </div>
+        <div class="syncs">
+          <video
+            id="video-element"
+            width="400"
+            height="400"
+            src=""
+            autoplay
+            loop
+            muted
+            class="animated rounded-circle"
+          ></video>
+        </div>
+        <div class="typer">
+          <div class="typer">
+            <form class="input-container" id="myForm">
+              <input
+                type="text"
+                placeholder="Send a message."
+                id="textArea"
+              />
+              <button class="send-button" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <div id="content" style="display: none">
+      <div id="status">
+        <h4>Agent Status</h4>
+        Agent ID: <label id="agentId-label"></label><br />
+        Chat ID: <label id="chatId-label"></label><br />
+        <br />
+        <h4>WebRTC Connection Status</h4>
+        ICE gathering status: <label id="ice-gathering-status-label"></label><br />
+        ICE status: <label id="ice-status-label"></label><br />
+        Peer connection status: <label id="peer-status-label"></label><br />
+        Signaling status: <label id="signaling-status-label"></label><br />
+        Streaming status: <label id="streaming-status-label"></label><br />
+        <br />
+        <div id="buttons">
+          <button id="agents-button" type="button">Create new Agent with Knowledge</button>
+          <br /><br />
+          <button id="connect-button" type="button">Connect</button>
+          <button id="destroy-button" type="button">Destroy</button>
+        </div>
+      </div>
+
+      <div id="video-wrapper">
+        <div>
+          <video id="video-element" width="600" height="600" src="" autoplay loop muted class="animated"></video>
+        </div>
+      </div>
+      <div class="chat">
+        <h4>Chat History</h4>
+        <div id="msgHistory"></div>
+      </div>
+    </div>
+    <script type="module" src="./agents-client-api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
