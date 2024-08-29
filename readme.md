@@ -1,11 +1,10 @@
-# Talk With Avator Using DID Agents
+# Talk With Avatar Using DID Agents
 
 This project demonstrates the use of D-ID's `talks` API for creating AI-driven video agents capable of interactive communication. The front-end is built using HTML, CSS, and JavaScript, and it integrates with the D-ID API to handle video streams and chat functionalities.
 
 Here’s how the demo looks:
 
 ![Sample Video](Sample-Video.gif)
-
 
 ## Installation
 
@@ -16,8 +15,15 @@ Here’s how the demo looks:
     ```
 
 2. Install necessary dependencies:
-   - Ensure you have a server (e.g., `Live Server` extension in VSCode) to serve the HTML file. 
-   - Fetch `axios` via a CDN for HTTP requests if not already included in `index.html`.
+   - Ensure you have a server to serve the HTML file. You can use `http-server` for this.
+   - Install `http-server` globally:
+     ```bash
+     npm install -g http-server
+     ```
+   - Start the server with no cache:
+     ```bash
+     http-server -c-1
+     ```
 
 3. Run the project:
    - Open `index-agents.html` in a browser.
@@ -40,3 +46,7 @@ Update the `api.json` file with your API key and URL:
     "service": "talks"
 }
 ```
+
+## Sign Up for Free Credits
+
+You can sign up on the [D-ID website](https://www.d-id.com/) to receive 20 free credits and start using the API.
