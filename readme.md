@@ -10,8 +10,8 @@ Here’s how the demo looks:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/SyedAffan10/Talk-With-Avator-Using-DID-Agents.git
-    cd Talk-With-Avator-Using-DID-Agents
+    git clone https://github.com/SyedAffan10/Talk-With-Avatar-Using-DID-Agents.git
+    cd Talk-With-Avatar-Using-DID-Agents
     ```
 
 2. Install necessary dependencies:
